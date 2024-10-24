@@ -22,7 +22,8 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                'gradient-start': '#FF8938',
+                'gradient-end': '#F00',
               }
             }
           }
@@ -157,7 +158,7 @@
             </div>
         </section>
         <!-- Meet super client -->
-         <section class="my-20 flex flex-col lg:flex-row rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-20 gap-12 ">
+         <section class="my-20 flex flex-col lg:flex-row rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-20 gap-12 ">
           <div class="flex items-center pr-28">
             <div class="space-y-5">
               <h2 class=" text-5xl font-extrabold text-[#F4F4F4] ">
@@ -261,7 +262,60 @@
           </section>
 
     </main>
-    <footer></footer>
+
+    <footer class="bg-base-200 text-base-content px-48 py-10">
+      <div class="flex justify-between my-24">
+        <img src="images/cup.png" alt="">
+        <p>
+          <span>Ready to get started?</span>
+          <button class="text-white btn bg-gradient-to-r from-gradient-start to-gradient-end">Get Started</button>
+        </p>
+      </div>
+      <div class="footer">
+        <nav>
+          <h6 class="footer-title">Services</h6>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Company</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Legal</h6>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <form>
+          <h6 class="footer-title">Newsletter</h6>
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="py-2 bg-transparent border-b-2 border-black outline-none" />
+              <button class=" absolute-top-0 right-0 rounded-full btn text-white bg-gradient-to-r from-gradient-start to-gradient-end join-item"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="mt-10 text-center">
+        <aside>
+          <p>Copyright ©  - All right reserved by ACME Industries Ltd</p>
+        </aside>
+      </div>
+      
+    </footer>
+    
     
 </body>
 </html>
